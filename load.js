@@ -35,7 +35,7 @@
 		
 		load_jquery_ui : function(version) {
 			loader.load_jquery();
-			version = version || '1.10.0';
+			version = version || '1.10.3';
 			if(!(window.jQuery && jQuery.ui)) {
 				loader.load_css('http://code.jquery.com/ui/' + version + '/themes/base/jquery-ui.css');
 				loader.load_js('http://code.jquery.com/ui/'  + version + '/jquery-ui.js');

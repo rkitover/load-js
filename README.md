@@ -13,20 +13,20 @@ Examples
     <script type='text/javascript>
         // all your load calls should be in their own <script> block
 
-        load_css('http://foo.com/some.css')
+        loader.load_css('http://foo.com/some.css')
 
-        load_js('/js/some.js')
+        loader.load_js('/js/some.js')
 
         // will not be loaded twice!
-        load_js('/js/some.js')
+        loader.load_js('/js/some.js')
 
-        load_jquery() // latest 1.x, only if window['jQuery'] is unset
+        loader.load_jquery() // latest 1.x, only if window['jQuery'] is unset
 
-        load_jquery('1.8.6') // specific version
+        loader.load_jquery('1.8.6') // specific version
 
-        load_jquery_ui() // loads jquery first, uses jquery-ui 1.10.0 by default, only if jQuery.ui is unset
+        loader.load_jquery_ui() // loads jquery first, uses jquery-ui 1.10.3 by default, only if jQuery.ui is unset
 
-        load_jquery_ui('1.9.2') // specific version
+        loader.load_jquery_ui('1.9.2') // specific version
     </script>
 
     <script type='text/javascript'>
